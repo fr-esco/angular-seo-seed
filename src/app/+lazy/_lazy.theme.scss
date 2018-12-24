@@ -1,0 +1,6 @@
+@import "./components/product/product.component.theme.scss";
+
+@mixin lazy($theme, $config) {
+  @include app-la-product-name-theme($theme);
+  // @include app-la-product-name-typography($config);
+}

@@ -1,0 +1,27 @@
+{
+  "angular-template-formatter.indentWidth": 2,
+  "css.validate": false,
+  "editor.formatOnPaste": true,
+  "editor.formatOnSave": true,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/dist/*/**": true
+  },
+  "git.ignoreLimitWarning": true,
+  "html.format.enable": false,
+  "prettier.disableLanguages": ["html", "json", "typescript"],
+  "prettier.stylelintIntegration": true,
+  "scss.validate": false,
+  "search.exclude": {
+    "**/coverage": true,
+    "**/coverage_js": true,
+    "**/dist": true
+  },
+  "tslint.autoFixOnSave": true,
+  "tslint.rulesDirectory": "node_modules/codelyzer",
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "typescriptHero.imports.grouping": ["Plains", "Modules", "/\\.\\./", "/\\./"],
+  "typescriptHero.imports.organizeOnSave": true
+}

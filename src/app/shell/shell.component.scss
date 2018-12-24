@@ -1,0 +1,34 @@
+// https://github.com/angular/material2/blob/master/src/lib/card/card.scss#L6
+$mat-card-padding: 16px !default;
+
+.sidenav-container {
+  height: 100%;
+}
+
+.sidenav {
+  width: 200px;
+}
+
+.sidenav .mat-toolbar {
+  background: inherit;
+}
+
+.mat-toolbar.mat-primary {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+main {
+  padding: $mat-card-padding;
+}
+
+a[href] {
+  text-align: unset;
+  // 40px » button + 16px » mat-padding
+  width: calc(100% - 56px);
+}
+
+mat-tree-node[aria-level] {
+  transition: all 1s;
+}

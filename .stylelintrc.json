@@ -1,0 +1,22 @@
+{
+  "extends": [
+    "stylelint-config-recommended-scss",
+    "./node_modules/prettier-stylelint/config.js"
+  ],
+  "rules": {
+    "color-named": "always-where-possible",
+    "color-no-hex": null,
+    "indentation": [
+      2,
+      {
+        "indentInsideParens": "once-at-root-twice-in-block"
+      }
+    ],
+    "selector-type-no-unknown": [
+      true,
+      {
+        "ignoreTypes": ["/^app-/", "/^mat-/"]
+      }
+    ]
+  }
+}

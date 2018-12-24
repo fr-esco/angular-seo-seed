@@ -1,0 +1,67 @@
+@import "~@angular/material/theming";
+
+@mixin app-la-product-name-theme($theme) {
+  $primary: map-get($theme, primary);
+  $accent: map-get($theme, accent);
+
+  $background: map-get($theme, background);
+  $foreground: map-get($theme, foreground);
+
+  .mat-typography {
+    .la-strong {
+      @extend .mat-body-2;
+      color: mat-color($accent);
+    }
+
+    dt {
+      @extend .la-strong;
+    }
+
+    .la-header {
+      color: mat-color($accent);
+      font-variant-caps: small-caps;
+
+      &-icon {
+        &::before {
+          content: "home";
+          /* stylelint-disable-next-line font-family-no-missing-generic-family-keyword */
+          font-family: "Material Icons";
+          font-weight: normal;
+          font-style: normal;
+          font-size: 24px;
+          font-variant-caps: normal;
+          letter-spacing: normal;
+          text-transform: none;
+          display: inline-block;
+          white-space: nowrap;
+          word-wrap: normal;
+          direction: ltr;
+          -webkit-font-feature-settings: "liga";
+          -webkit-font-smoothing: antialiased;
+          vertical-align: sub;
+          margin-left: -2px;
+          margin-right: 4px;
+        }
+      }
+    }
+
+    .la-info {
+      background-color: mat-color($background, hover, 0.12);
+      padding: 8px;
+
+      .la-header {
+        color: currentColor;
+      }
+    }
+  }
+}
+
+// @mixin app-la-product-name-typography($config) {
+//   app-la-product-name {
+//     font: {
+//       family: mat-font-family($config, body-2);
+//       size: mat-font-size($config, body-2);
+//       weight: mat-font-weight($config, body-2);
+//     }
+//   }
+// }
