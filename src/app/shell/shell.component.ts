@@ -1,7 +1,7 @@
 import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 import { OverlayContainer } from '@angular/cdk/overlay';
 import { FlatTreeControl } from '@angular/cdk/tree';
-import { Component, HostBinding } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding } from '@angular/core';
 import { MatButtonToggleChange, MatTreeFlatDataSource, MatTreeFlattener } from '@angular/material';
 import { Observable, of } from 'rxjs';
 import { map } from 'rxjs/operators';
@@ -28,6 +28,7 @@ export class MenuFlatNode {
   selector: 'app-shell',
   templateUrl: './shell.component.html',
   styleUrls: ['./shell.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShellComponent {
   treeControl: FlatTreeControl<MenuFlatNode>;

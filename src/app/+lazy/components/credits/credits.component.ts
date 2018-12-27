@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
   selector: 'app-la-credits',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
       text-align: center;
     }
   `],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LaCreditsComponent {
   constructor() { }

@@ -1,6 +1,6 @@
 {
   "name": "@fr-esco/angular-seo-seed",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Example project for Angular 7 SEO-friendly webapp with SSR and Material.",
   "repository": "github:fr-esco/angular-seo-seed",
   "scripts": {

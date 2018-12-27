@@ -5,51 +5,11 @@ html,
 body {
   height: 100%;
 }
-h1 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 250%;
-}
-h2,
-h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: lighter;
-}
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
-body,
-input[text],
-button {
-  font-family: Cambria, Georgia, serif;
-}
 a {
   cursor: pointer;
   cursor: hand;
-}
-button {
-  font-family: Arial, sans-serif;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
-}
-button:disabled {
-  cursor: auto;
-}
-
-/* Navigation link styles */
-nav a {
-  padding: 5px 10px;
-  text-decoration: none;
-  margin-right: 10px;
-  margin-top: 10px;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-/* everywhere else */
-* {
-  font-family: Arial, Helvetica, sans-serif;
 }

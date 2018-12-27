@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-la-welcome',
   templateUrl: './welcome.component.html',
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LaWelcomeComponent implements OnInit {
   constructor() { }
