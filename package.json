@@ -15,7 +15,10 @@
     "build:ssr": "run-s build:client-and-server-bundles webpack:server",
     "serve:ssr": "node dist/server.js",
     "build:client-and-server-bundles": "ng build --prod && ng run angular.io-example:server",
-    "webpack:server": "webpack --config webpack.server.config.js --progress --colors"
+    "webpack:server": "webpack --config webpack.server.config.js --progress --colors",
+    "pwa": "run-s *:pwa",
+    "build:pwa": "ng build --prod",
+    "serve:pwa": "http-server -p 5555 -c-1 dist/browser"
   },
   "keywords": [
     "angular",
@@ -61,6 +64,7 @@
     "@types/jasminewd2": "^2.0.4",
     "@types/node": "~10.12.0",
     "codelyzer": "^4.5.0",
+    "http-server": "^0.11.1",
     "jasmine-core": "^3.2.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "^3.1.0",
