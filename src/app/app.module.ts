@@ -13,6 +13,8 @@ import { HeroService } from './hero.service';
 import { InMemoryDataService } from './in-memory-data.service';
 import { SharedModule } from './shared/shared.module';
 import { ShellComponent } from './shell/shell.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   imports: [
@@ -25,6 +27,7 @@ import { ShellComponent } from './shell/shell.component';
     ),
     BrowserAnimationsModule,
     SharedModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   declarations: [
     AppComponent,
